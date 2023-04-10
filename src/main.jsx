@@ -8,6 +8,8 @@ import Home from "./components/Home/Home";
 import Main from "./components/Layout/Main";
 import Statistics from "./components/Statistics/Statistics";
 import Categories from "./components/Categories/Categories";
+import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
+import Blogs from "./components/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "statistics",
         element: <Statistics></Statistics>,
+      },
+      {
+        path: "applied-jobs",
+        element: <AppliedJobs></AppliedJobs>,
+      },
+      {
+        path: "blogs",
+        element: <Blogs></Blogs>,
       },
     ],
   },
