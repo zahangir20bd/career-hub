@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
@@ -6,11 +7,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto text-white grid grid-cols-2 gap-5 md:flex justify-between px-2 py-12">
         <div>
           <h2 className="text-xl font-bold mb-3">CareerCrafters</h2>
-          <p className="max-w-sm">
+          <p className="max-w-sm mb-3">
             CareerCrafters is a job hunting site with job categories,
             personalized profiles, and interview resources to aid career
             advancement.
           </p>
+          <img src="Group 9969.png" alt="" />
         </div>
         <div>
           <h2 className="text-xl font-bold mb-3">Company</h2>
