@@ -1,9 +1,10 @@
 import React from "react";
+import Nav from "../Nav/Nav";
 
 const HomeBanner = () => {
   return (
     <div className="bg-red-100">
-      <h2>Home Banner</h2>
+      <Nav></Nav>
     </div>
   );
 };
