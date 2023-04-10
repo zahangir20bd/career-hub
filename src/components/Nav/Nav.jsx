@@ -19,7 +19,7 @@ const Nav = () => {
           Blogs
         </Link>
       </nav>
-      <button className="my-4 bg-indigo-400 p-3 rounded-md text-white font-semibold">
+      <button className="my-4 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] p-3 rounded-md text-white font-semibold">
         Start Applying
       </button>
     </div>
