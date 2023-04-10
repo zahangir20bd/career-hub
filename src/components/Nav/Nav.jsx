@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "./Menu/Menu";
+import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const Nav = () => {
+  const [open, setOpen] = useState(false);
+
   const routes = [
     {
       id: 1,
@@ -28,7 +31,16 @@ const Nav = () => {
     <div className="md:flex justify-between items-center container mx-auto lg:px-14 p-2">
       <h2 className="text-2xl font-bold my-4">CareerCrafters</h2>
       <nav>
-        <ul className="md:flex md:gap-12 gap-2 ">
+        <div onClick={() => setOpen(!open)} className="md:hidden">
+          <span>
+            {open === true ? (
+              <XMarkIcon className="h-8 w-8 text-[#a746e7]" />
+            ) : (
+              <Bars3Icon className="h-8 w-8 text-[#a746e7]" />
+            )}
+          </span>
+        </div>
+        <ul className={`md:flex md:gap-12 gap-2 ${open || "hidden "}`}>
           {routes.map((route) => (
             <Menu key={route.id} route={route}></Menu>
           ))}
