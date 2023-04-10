@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "company_logo": "https://example.com/logos/company1.png",
+        "company_logo": "https://pngimg.com/d/google_PNG19625.png",
         "job_title": "Software Engineer",
         "company_name": "Google LLC",
         "job_site": "Remote",
@@ -17,7 +17,7 @@
     },
     {
         "id": 2,
-        "company_logo": "https://example.com/logos/company2.png",
+        "company_logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png",
         "job_title": "Senior Marketing Manager",
         "company_name": "Netflix",
         "job_site": "Onsite",
@@ -33,7 +33,7 @@
     },
     {
         "id": 3,
-        "company_logo": "https://example.com/logos/company3.png",
+        "company_logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-20.png",
         "job_title": "Technical Database Engineer",
         "company_name": "Tesla",
         "job_site": "Onsite",
@@ -49,7 +49,7 @@
     },
     {
         "id": 4,
-        "company_logo": "https://example.com/logos/company4.png",
+        "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
         "job_title": "Product Designer",
         "company_name": "Amazon.con, Inc.",
         "job_site": "Remote",
@@ -65,7 +65,7 @@
     },
     {
         "id": 5,
-        "company_logo": "https://example.com/logos/company4.png",
+        "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1280px-Meta_Platforms_Inc._logo.svg.png",
         "job_title": "Cyber Security Expert",
         "company_name": "Meta Platforms, Inc.",
         "job_site": "Onsite",
@@ -81,7 +81,7 @@
     },
     {
         "id": 6,
-        "company_logo": "https://example.com/logos/company4.png",
+        "company_logo": "https://pngimg.com/d/google_PNG19625.png",
         "job_title": "Senior System Engineer",
         "company_name": "Google LLC",
         "job_site": "Onsite",

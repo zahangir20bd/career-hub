@@ -1,24 +1,18 @@
 import React, { useEffect, useState } from "react";
 import HomeBanner from "../HomeBanner/HomeBanner";
 import Categories from "../Categories/Categories";
-import { useLoaderData } from "react-router-dom";
+
 import FeaturedJobs from "./FeaturedJobs/FeaturedJobs";
+import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
-  const jobCategories = useLoaderData();
-  const [jobs, setJobs] = useState([]);
-
-  useEffect(() => {
-    fetch("job.json")
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }, []);
-
+  const jobs = useLoaderData();
+  console.log(jobs);
   return (
     <div>
       <HomeBanner></HomeBanner>
-      <Categories jobCategories={jobCategories}></Categories>
-      <FeaturedJobs></FeaturedJobs>
+      <Categories></Categories>
+      <FeaturedJobs jobs={jobs}></FeaturedJobs>
     </div>
   );
 };

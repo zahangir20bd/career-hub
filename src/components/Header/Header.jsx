@@ -8,7 +8,7 @@ const Header = () => {
           Take the first <br />
           step towards a
           <br />
-          <span className="bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-[#4358e2] to-[#a720c9] text-transparent bg-clip-text">
             brighter future.
           </span>
         </h1>
