@@ -1,10 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
     <div className="bg-black ">
-      <div className="max-w-7xl mx-auto text-white grid grid-cols-2 gap-5 md:flex justify-between px-2 py-12">
+      <div className="max-w-6xl mx-auto text-white grid grid-cols-2 gap-5 md:flex justify-between px-2 py-12">
         <div>
           <h2 className="text-xl font-bold mb-3">CareerCrafters</h2>
           <p className="max-w-sm mb-3">

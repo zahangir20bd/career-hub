@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="max-w-7xl mx-auto md:flex justify-between items-center px-2">
+    <div className="max-w-6xl mx-auto md:flex justify-between items-center px-2">
       <div className="max-w-xl">
         <h1 className="text-6xl font-bold">
           Take the first <br />
