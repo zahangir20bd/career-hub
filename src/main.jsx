@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Main from "./components/Layout/Main";
 import Statistics from "./components/Statistics/Statistics";
+import Categories from "./components/Categories/Categories";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("category.json"),
+        // loader: ()=> fetch('jobs.json')
       },
       {
         path: "statistics",

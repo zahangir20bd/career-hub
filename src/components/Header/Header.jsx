@@ -2,24 +2,23 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="container lg:px-14">
-      <div className="">
+    <div className="max-w-7xl mx-auto md:flex justify-between items-center px-2">
+      <div className="max-w-xl">
         <h1 className="text-6xl font-bold">
-          One Step <br /> Closer To Your
+          Take the first <br />
+          step towards a
           <br />
           <span className="bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-transparent bg-clip-text">
-            Dream Job
+            brighter future.
           </span>
         </h1>
-        <p className="mt-6">
-          <small>
-            Explore thousands of job opportunities with all the information you
-            need. Its your future. Come find it. Manage all your job application
-            from start to finish.
-          </small>
+        <p className="mt-8">
+          Explore thousands of job opportunities with all the information you
+          need. Its your future. Come find it. Manage all your job application
+          from start to finish.
         </p>
       </div>
-      <img src="" alt="" />
+      <img className="max-h-[550px]" src="image1.png" alt="" />
     </div>
   );
 };
