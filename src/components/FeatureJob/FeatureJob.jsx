@@ -38,7 +38,7 @@ const FeatureJob = ({ data }) => {
           <p>Salary: {salary}</p>
         </div>
       </div>
-      <button className=" bg-gradient-to-r from-[#6979dd] to-[rgb(202,77,233)] p-3 rounded-md text-white font-semibold">
+      <button className=" bg-gradient-to-r from-[#6979dd] to-[#ca4de9] p-3 rounded-md text-white font-semibold">
         <Link to={`/${id}`}>View Details</Link>
       </button>
     </div>

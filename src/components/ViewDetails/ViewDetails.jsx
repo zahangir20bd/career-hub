@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "../Banner/Banner";
 import { useLoaderData, useParams } from "react-router-dom";
 import {
@@ -8,10 +8,12 @@ import {
   PhoneIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
+import { addToDb } from "../../utilities/fakedb";
 
 const ViewDetails = () => {
   const jobs = useLoaderData();
   const data = useParams();
+  const [cart, setCart] = useState([]);
   const specificJob = jobs.find((job) => job.id == data.jobID);
 
   const {
@@ -26,6 +28,22 @@ const ViewDetails = () => {
     email,
     location,
   } = specificJob;
+
+  const handleAddToCart = (product) => {
+    let newCart = [];
+
+    const exists = cart.find((pd) => pd.id === product.id);
+    if (!exists) {
+      product.quantity = 1;
+      newCart = [...cart, product];
+    } else {
+      const remaining = cart.filter((pd) => pd.id !== product.id);
+      newCart = [...remaining, exists];
+    }
+
+    setCart(newCart);
+    addToDb(product.id);
+  };
 
   return (
     <div>
@@ -87,7 +105,10 @@ const ViewDetails = () => {
               </p>
             </div>
           </div>
-          <button className="w-full text-lg mt-4 bg-gradient-to-r from-[#6979dd] to-[rgb(202,77,233)] p-3 rounded-md text-white font-semibold">
+          <button
+            onClick={() => handleAddToCart(specificJob)}
+            className="w-full text-lg mt-4 bg-gradient-to-r from-[#6979dd] to-[rgb(202,77,233)] p-3 rounded-md text-white font-semibold"
+          >
             Apply Now
           </button>
         </div>

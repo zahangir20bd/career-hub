@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Menu from "./Menu/Menu";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -46,8 +47,8 @@ const Nav = () => {
           ))}
         </ul>
       </nav>
-      <button className="my-4 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] p-3 rounded-md text-white font-semibold">
-        Start Applying
+      <button className="my-4 bg-gradient-to-r from-[#8895e7] to-[#c364db] p-3 rounded-md text-white font-semibold">
+        <Link to="/">Start Applying</Link>
       </button>
     </div>
   );

@@ -58,49 +58,51 @@ const Statistics = () => {
     },
   ];
   return (
-    <div className="text-center">
+    <div>
       <Banner from="Statistics"></Banner>
-      <div className=" max-w-6xl mx-auto mt-24">
-        <div>
-          <AreaChart
-            width={1080}
-            height={400}
-            data={assignmentMarks}
-            margin={{
-              top: 10,
-              right: 30,
-              left: 0,
-              bottom: 0,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Area
-              type="monotone"
-              dataKey="marks"
-              stroke="#8884d8"
-              fill="#8884d8"
-            />
-          </AreaChart>
-        </div>
-        <div>
-          <PieChart className="mx-auto" width={300} height={300}>
-            <Pie
-              dataKey="marks"
-              startAngle={180}
-              endAngle={0}
+      <div className="text-center">
+        <div className=" max-w-6xl mx-auto mt-24">
+          <div>
+            <AreaChart
+              width={1080}
+              height={400}
               data={assignmentMarks}
-              outerRadius={80}
-              fill="#8884d8"
-              cx="50%"
-              cy="50%"
-              label
-            />
-            <Tooltip />
-          </PieChart>
+              margin={{
+                top: 10,
+                right: 30,
+                left: 0,
+                bottom: 0,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Area
+                type="monotone"
+                dataKey="marks"
+                stroke="#8884d8"
+                fill="#8884d8"
+              />
+            </AreaChart>
+          </div>
+          <div>
+            <PieChart className="mx-auto" width={300} height={300}>
+              <Pie
+                dataKey="marks"
+                startAngle={180}
+                endAngle={0}
+                data={assignmentMarks}
+                outerRadius={80}
+                fill="#8884d8"
+                cx="50%"
+                cy="50%"
+                label
+              />
+              <Tooltip />
+            </PieChart>
+          </div>
         </div>
       </div>
     </div>
