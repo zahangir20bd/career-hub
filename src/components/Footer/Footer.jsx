@@ -48,6 +48,18 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className="max-w-6xl mx-auto text-white">
+        <hr />
+        <div className="px-2 flex justify-between mt-12 pb-12">
+          <small>
+            &#169;2023 <span className="font-bold">CareerCrafters</span>. All
+            Rights Reserved
+          </small>
+          <small>
+            Powered by <span className="font-bold">CareerCrafters</span>
+          </small>
+        </div>
+      </div>
     </div>
   );
 };

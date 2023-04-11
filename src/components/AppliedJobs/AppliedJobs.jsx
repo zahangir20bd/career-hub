@@ -4,7 +4,7 @@ import Banner from "../Banner/Banner";
 const AppliedJobs = () => {
   return (
     <div>
-      <Banner></Banner>
+      <Banner from="Applied Jobs"></Banner>
       <h2>Applied Jobs</h2>
     </div>
   );

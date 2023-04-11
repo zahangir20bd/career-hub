@@ -4,9 +4,8 @@ import Banner from "../Banner/Banner";
 const Blogs = () => {
   return (
     <div>
-      <Banner></Banner>
-      <div className="max-w-6xl mx-auto px-2 my-32">
-        <h2 className="text-5xl font-bold text-center mb-20">Blogs</h2>
+      <Banner from="Blogs"></Banner>
+      <div className="max-w-6xl mx-auto px-2 my-24">
         <div className="border-2 mb-10 px-3 py-5 rounded-lg bg-gradient-to-r from-[#7e8ffe2d] to-[#9873ff28]">
           <h2 className="text-3xl font-semibold mb-3">
             When Should you use context API?
@@ -101,6 +100,33 @@ const Blogs = () => {
         </div>
         <div className="border-2 mb-10 px-3 py-5 rounded-lg bg-gradient-to-r from-[#7e8ffe2d] to-[#9873ff28]">
           <h2 className="text-3xl font-semibold mb-3">What is useMemo?</h2>
+          <p className="pt-3 text-justify">
+            useMemo() is a hook in React that allows us to memoize a function's
+            result so that it is only recomputed when one of its dependencies
+            changes. This can help to optimize the performance of the React
+            application by reducing the number of times that expensive
+            computations are performed.
+          </p>
+          <p className="pt-3 text-justify">
+            The basic syntax of useMemo() hook is:
+          </p>
+          <p className="pt-3 ps-4 text-justify">
+            {
+              "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);"
+            }
+          </p>
+          <p className="pt-3 text-justify">
+            Here, computeExpensiveValue(a, b) is the function whose result I
+            want to memoize, and [a, b] is an array of dependencies that
+            useMemo() uses to determine when to recompute the value. If any of
+            the dependencies in the array change, useMemo() will recompute the
+            value; otherwise, it will return the memoized value.
+          </p>
+          <p className="pt-3 text-justify">
+            useMemo() is typically used for performance optimizations when a
+            component is rendering frequently or when it is expensive to
+            calculate a value.
+          </p>
         </div>
       </div>
     </div>
