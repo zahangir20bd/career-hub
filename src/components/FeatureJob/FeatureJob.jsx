@@ -1,8 +1,10 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const FeatureJob = ({ data }) => {
   const {
+    id,
     company_logo,
     job_title,
     company_name,
@@ -37,7 +39,7 @@ const FeatureJob = ({ data }) => {
         </div>
       </div>
       <button className=" bg-gradient-to-r from-[#6979dd] to-[rgb(202,77,233)] p-3 rounded-md text-white font-semibold">
-        View Details
+        <Link to={`/${id}`}>View Details</Link>
       </button>
     </div>
   );

@@ -42,8 +42,8 @@
         "salary": "90K - 110K",
         "job_description": "As a Technical Database Engineer, you'll be responsible for designing and implementing complex database systems. You'll work with cross-functional teams to ensure the database infrastructure meets business requirements, troubleshoot issues, optimize performance, and ensure data integrity and security. You'll also provide support to other teams as needed. This role requires a strong understanding of database design, performance tuning, and data security, as well as proficiency in SQL and other database management tools.",
         "job_responsibility": "As a Technical Database Engineer, you'll design and implement complex database systems, troubleshoot issues, and optimize performance. You'll work with cross-functional teams to ensure the database infrastructure meets business requirements and ensure data security. You'll also monitor database performance and provide support to other teams. This role requires a strong understanding of database design and proficiency in SQL and other database management tools.",
-        "education": "Bachelor's degree in Graphic Design or a related field.",
-        "experiences": "2+ years of experience in graphic design.",
+        "education": "Bachelor's degree in Computer Science or a related field.",
+        "experiences": "2+ years of experience in Database Administration.",
         "phone": "555-555-9012",
         "email": "jobs@tesla.com"
     },
@@ -58,8 +58,8 @@
         "salary": "80K - 100K",
         "job_description": "As a Product Designer for Amazon, we are looking or some dynamic person who can design intuitive, engaging products and features. You'll work with cross-functional teams to define user requirements, develop user flows, and create prototypes. You'll also collaborate with developers to ensure the design is implemented correctly and continuously improve the product through usability testing. This role requires a strong understanding of user-centered design principles, proficiency in design tools, and excellent communication skills.",
         "job_responsibility": "As a Product Designer for Amazon, you'll design products that meet customer needs and drive business results. You'll work with cross-functional teams to define user requirements, develop user flows, and create prototypes. You'll also collaborate with developers to ensure the design is implemented correctly and work to continuously improve the product through usability testing. This role requires a strong understanding of user-centered design principles, proficiency in design tools, and excellent communication skills.",
-        "education": "Bachelor's degree in Sales or a related field.",
-        "experiences": "2+ years of experience in sales.",
+        "education": "Bachelor's degree in Graphics Designing or a related field.",
+        "experiences": "2+ years of experience in Graphics Designing.",
         "phone": "555-555-3456",
         "email": "jobs@amazon.com"
     },
@@ -74,8 +74,8 @@
         "salary": "200K - 230K",
         "job_description": "As a Cyber Security Expert for Facebook, you'll be responsible for protecting the company's data and systems from cyber threats. You'll identify potential risks, develop and implement security protocols, monitor the network for breaches, and provide guidance to other teams. This role requires a strong understanding of cybersecurity principles, proficiency in security tools, and excellent communication skills.",
         "job_responsibility": "As a Cyber Security Expert for Facebook, you'll identify and assess potential security risks, develop and implement security protocols, monitor the network for breaches, and analyze security incidents. You'll also stay current with cybersecurity trends and provide guidance to other teams. This role requires strong cybersecurity knowledge, proficiency in security tools, and excellent communication skills.",
-        "education": "Bachelor's degree in Sales or a related field.",
-        "experiences": "4+ years of experience in sales.",
+        "education": "Bachelor's degree in Computer Science or a related field.",
+        "experiences": "4+ years of experience in Cyber Security field.",
         "phone": "555-555-3456",
         "email": "jobs@meta.com"
     },
@@ -90,8 +90,8 @@
         "salary": "180K - 200K",
         "job_description": "As a Senior System Engineer at Google, we're looking for  who will design, implement, and maintain large-scale systems critical to the company's business. You'll need deep technical expertise, strong analytical skills, and experience with distributed systems. You'll collaborate with cross-functional teams to ensure that the systems meet performance, availability, and scalability requirements.",
         "job_responsibility": "A Senior System Engineer at Google is responsible for designing, implementing, and maintaining large-scale systems critical to the company's business. This role requires technical expertise, analytical skills, and experience with distributed systems. You'll collaborate with cross-functional teams to develop and deploy innovative solutions, and ensure that systems meet performance, availability, and scalability requirements. Additionally, you'll stay up-to-date with emerging technologies and industry trends to ensure systems remain secure.",
-        "education": "Bachelor's degree in Sales or a related field.",
-        "experiences": "2+ years of experience in sales.",
+        "education": "Bachelor's degree in Computer Science or a related field.",
+        "experiences": "2+ years of experience in System Engineering.",
         "phone": "555-555-3456",
         "email": "jobs@google.com"
     }
