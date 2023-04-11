@@ -3,6 +3,8 @@ import FeatureJob from "../../FeatureJob/FeatureJob";
 
 const FeaturedJobs = ({ jobs }) => {
   const [featureJobs, setFeatureJobs] = useState(jobs);
+  const [clicked, setClicked] = useState(false);
+
   useEffect(() => {
     let newJobs = jobs.slice(0, 4);
     setFeatureJobs(newJobs);
@@ -10,6 +12,7 @@ const FeaturedJobs = ({ jobs }) => {
 
   const seeAllButtonHandler = () => {
     setFeatureJobs(jobs);
+    setClicked(true);
   };
   return (
     <div className="max-w-6xl mx-auto mt-32 px-2 ">
@@ -25,13 +28,15 @@ const FeaturedJobs = ({ jobs }) => {
         ))}
       </div>
       <div className="text-center mt-6 mb-20">
-        <button
-          onClick={seeAllButtonHandler}
-          className={`center bg-gradient-to-r from-[#6979dd] to-[rgb(202,77,233)] p-3 rounded-md text-white font-semibold
+        {!clicked && (
+          <button
+            onClick={seeAllButtonHandler}
+            className={`center bg-gradient-to-r from-[#6979dd] to-[rgb(202,77,233)] p-3 rounded-md text-white font-semibold
             `}
-        >
-          See All Jobs
-        </button>
+          >
+            See All Jobs
+          </button>
+        )}
       </div>
     </div>
   );
