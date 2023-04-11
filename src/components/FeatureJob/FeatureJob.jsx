@@ -1,8 +1,7 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
 
-const FeatureJob = ({ featureJob }) => {
-  console.log(featureJob);
+const FeatureJob = ({ data }) => {
   const {
     company_logo,
     job_title,
@@ -11,7 +10,7 @@ const FeatureJob = ({ featureJob }) => {
     job_type,
     location,
     salary,
-  } = featureJob;
+  } = data;
   return (
     <div className="border-2 p-4 rounded-lg">
       <img className="max-w-[100px]" src={company_logo} alt="" />
