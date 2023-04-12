@@ -1,10 +1,10 @@
 # Welcome to CareerCrafters
 
--It's a Job Hunting Web site.-
+\*It's a Job Hunting Web site.
 
--You can find More the 1000 job here
+\*You can find More the 1000 job here
 
--for Apply:
+\*for Apply:
 
     1. Click View Details on your Matching Job Card.
     2. It's redirect a new page you can see details about the job.
