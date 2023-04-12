@@ -30,7 +30,9 @@ const Nav = () => {
   ];
   return (
     <div className="md:flex justify-between items-center max-w-6xl mx-auto p-2">
-      <h2 className="text-2xl font-bold my-4">CareerCrafters</h2>
+      <h2 className="text-2xl font-bold my-4">
+        <Link to="/">CareerCrafters</Link>
+      </h2>
       <nav>
         <div onClick={() => setOpen(!open)} className="md:hidden">
           <span>
