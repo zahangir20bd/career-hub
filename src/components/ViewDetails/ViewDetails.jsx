@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Banner from "../Banner/Banner";
+import toast, { Toaster } from "react-hot-toast";
 import { useLoaderData, useParams } from "react-router-dom";
 import {
   MapPinIcon,
@@ -37,6 +38,9 @@ const ViewDetails = () => {
       product.quantity = 1;
       newCart = [...cart, product];
     } else {
+      toast("You have already applied for this post.", {
+        position: "top-right",
+      });
       const remaining = cart.filter((pd) => pd.id !== product.id);
       newCart = [...remaining, exists];
     }
@@ -77,7 +81,7 @@ const ViewDetails = () => {
             <div className="flex items-center gap-1 my-4">
               <BriefcaseIcon className="h-5 w-5 text-[#cb70f5]" />
               <p className=" text-[#757575]">
-                <span className="font-bold">Job Title:</span>{" "}
+                <span className="font-bold">Job Title:</span>
                 <span className="font-semibold">{job_title}</span>
               </p>
             </div>
@@ -113,6 +117,7 @@ const ViewDetails = () => {
           </button>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

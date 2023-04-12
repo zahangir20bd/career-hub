@@ -1,3 +1,5 @@
+import toast, { Toaster } from 'react-hot-toast';
+
 // use local storage to manage cart data
 const addToDb = id => {
     let shoppingCart = getShoppingCart();
@@ -6,11 +8,11 @@ const addToDb = id => {
     if (!quantity) {
         shoppingCart[id] = 1;
     }
-    else {
-        alert("You Have already Added")
-        // const newQuantity = quantity + 1;
-        // shoppingCart[id] = newQuantity;
-    }
+    // else {
+    //     toast("You Have already Added")
+    //     // const newQuantity = quantity + 1;
+    //     // shoppingCart[id] = newQuantity;
+    // }
     localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
 }
 
