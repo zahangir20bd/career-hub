@@ -3,7 +3,7 @@ import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
 const AppliedJob = ({ appliedJob }) => {
-  console.log(appliedJob);
+  //   console.log(appliedJob);
   const {
     id,
     company_logo,
