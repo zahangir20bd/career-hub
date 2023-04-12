@@ -11,4 +11,4 @@
     3. Click on Apply Now Button.
     4. Successfully Applied. Now you can see it in Applied Jobs Tab
 
-Markup : [CareerCrafters](https://rad-beignet-eaa4f0.netlify.app/ "Career Crafters")
+Live Link : [CareerCrafters](https://rad-beignet-eaa4f0.netlify.app/ "Career Crafters") or <https://rad-beignet-eaa4f0.netlify.app/>
